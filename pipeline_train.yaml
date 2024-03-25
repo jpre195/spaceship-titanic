@@ -1,0 +1,32 @@
+tasks:
+  - source: code/preprocessing.py
+    product:
+      nb: products/preprocessing.ipynb
+      encoder: products/encoder.pkl
+      train: products/train.csv
+      val: products/val.csv
+      test: products/test.csv
+
+  - source: code/linear_model.py
+    product:
+      nb: products/linear_model.ipynb
+      model: products/linear_regression/model.pkl
+      confusion: products/linear_regression/confusion.png
+      confusion_test: products/linear_regression/confusion_test.png
+      pr_curve: products/linear_regression/pr_curve.png
+
+  - source: code/decision_tree_model.py
+    product:
+      nb: products/decision_tree_model.ipynb
+      model: products/decision_tree/model.pkl
+      confusion: products/decision_tree/confusion.png
+      confusion_test: products/decision_tree/confusion_test.png
+      pr_curve: products/decision_tree/pr_curve.png
+
+  - source: code/random_forest_model.py
+    product:
+      nb: products/random_forest_model.ipynb
+      model: products/random_forest/model.pkl
+      confusion: products/random_forest/confusion.png
+      confusion_test: products/random_forest/confusion_test.png
+      pr_curve: products/random_forest/pr_curve.png
